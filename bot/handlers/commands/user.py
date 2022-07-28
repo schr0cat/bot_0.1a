@@ -98,7 +98,7 @@ async def age(message: types.Message, state: FSMContext):
         builder = InlineKeyboardBuilder()
         builder.add(types.InlineKeyboardButton(text="Да", callback_data="profile_yes"))
         builder.add(types.InlineKeyboardButton(text="Нет", callback_data="profile_no"))
-        await message.answer("Хотите вывести информацию о профиле ?", reply_markup=builder.as_markup())
+        await message.answer("Хотите вывести информацию о профиле ???", reply_markup=builder.as_markup())
 
 
 async def cmd_input_info(callback: types.CallbackQuery, state: FSMContext):
